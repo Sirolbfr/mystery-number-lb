@@ -25,7 +25,7 @@ Les indices "plus" et "moins" sont fournis après chaque tentative pour aider l'
 - Ajoutez un bouton pour valider le choix de l'utilisateur.
 - Préparez un conteneur pour afficher les résultats et les indices.
 
-Exemples dans le dossier `images`.
+Exemples dans le dossier `models`.
 
 ### Étape 2 : Logique du jeu
 
