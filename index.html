@@ -12,24 +12,23 @@
         <h1>Numéro mystère</h1>
         <div id="main_cont">
             <div id="levels">
-                <button type="Facile"></button>
-                <button type="Moyen"></button>
-                <button type="Difficile"></button>
+                <button id="easy" type="Facile" onclick="set_diff('easy')">Facile</button>
+                <button id="medium" type="Moyen" onclick="set_diff('med')">Moyen</button>
+                <button id="hard" type="Difficile" onclick="set_diff('hard')">Difficile</button>
             </div>
             <div id="desc">
                 <p>Trouvez le numéro mystère</p>
-                <p id=""></p>
+                <p id="range"></p>
+                <p id="max_trials"></p>
+                <p id="trial"></p>
             </div>
             <div id="in_sub">
-                <input type="number">
-                <button type="submit"></button>
+                <input type="number" name="Nombre" min="1" max="10" id="user_nb" placeholder="Nombre">
+                <button type="submit" id="submit" onclick="test()">Tester</button>
             </div>
-            <div id="results">
-
-            </div>
+            <div id="results"></div>
+            <button id="reset" type="reset" onclick="reset()">Rejouer</button>
         </div>
     </body>
-    <footer>
-        <img src="images/mystery-number.svg" alt="footer_img">
-    </footer>
+    <script type="text/javascript" src="script.js"></script>
 </html>

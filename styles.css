@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+
+    & #main_cont {
+
+        & #levels {
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+
+            & button {
+                border-radius: 8%;
+                padding: 5%;
+            }
+
+            & #easy {
+                background-color: rgb(76, 175, 80);
+            }
+
+            & #medium {
+                background-color: rgb(255, 193, 7);
+            }
+
+            & #hard {
+                background-color: rgb(244, 67, 54);
+            }
+        }
+    }
+}
+
+
+#in_sub {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+
+input {
+    padding: 4px 5px;
+}
