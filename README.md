@@ -51,49 +51,18 @@ Exemples dans le dossier `models`.
 
 ### Deadline
 
-Livraison du projet dans 2 jours à compter du début du brief.
+Livraison du projet dans 2 à 3 jours à compter du début du brief.
 
 ## Modalités d'évaluation
 
-- Correction entre pairs à l'aide d'une grille d'évaluation.
+- Correction entre pairs.
 
 ## Livrables
 
-- Un dépôt GitHub.
-- Un screen de votre grille d'évaluation.
+- Le lien vers votre dépôt GitHub
 
 ## Critères de performance
 
-- Ajoutez la grille d'évaluation ci-dessous dans le README de la personne que vous corrigez.
-- Pensez à compléter le ***nom de la personne corrigée*** et le ***nom du correcteur*** dans l'entête du tableau.
-- Indiquez le **nombre d'étoiles obtenues** (l'étoile d'une catégorie est obtenue si tous ses critères de performance sont validés).
-
-| *nom de la personne corrigée*           |                               | *nom du correcteur*     |
-| :---- | :----: | :---: |
-| Critères de performance                 |                               | Remarques du correcteur |
-| ***Interface utilisateur***             |                               |                         |
-| - L'interface est claire et intuitive   | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - Gestion des essais et des résultats   | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-|                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
-| ***Fonctionnalités***                   |                               |                         |
-| - Génération correcte du numéro mystère | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - Gestion des indices (plus/moins)      | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - Limitation des essais à 3 tentatives  | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-|                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
-| ***Code***                              |                               |                         |
-| - Organisation et lisibilité du code    | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - Respect des bonnes pratiques JS/HTML  | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - Commentaires dans le code             | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-|                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
-| ***Bonus***                             |                               |                         |
-| - Délai d'affichage                     | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-| - 3 niveaux de difficulté               | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-|                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
-| ***Livrables***                         |                               |                         |
-| - Projet livré dans les délais          | <ul><li>- [ ] &nbsp;</li><ul> |                         |
-|                                         | <ul><li>- [ ] ⭐</li><ul>     |                         |
-
-**Nombre d'étoiles obtenues** : ⭐⭐⭐⭐⭐
 
 ## Ressources
 
@@ -102,3 +71,4 @@ Livraison du projet dans 2 jours à compter du début du brief.
 ## Auteurs, contributeurs
 
 - [Nicolas Herbez](https://github.com/nicolas-herbez)
+- [Rémy Cottrez](https://github.com/RemyCTRZ)
