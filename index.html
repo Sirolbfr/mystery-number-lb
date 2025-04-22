@@ -12,15 +12,14 @@
         <h1>Numéro mystère</h1>
         <div id="main_cont">
             <div id="levels">
-                <button id="easy" type="Facile" onclick="set_diff('easy')">Facile</button>
-                <button id="medium" type="Moyen" onclick="set_diff('med')">Moyen</button>
-                <button id="hard" type="Difficile" onclick="set_diff('hard')">Difficile</button>
+                <button id="easy" type="button" onclick="set_diff('easy')">Facile</button>
+                <button id="medium" type="button" onclick="set_diff('med')">Moyen</button>
+                <button id="hard" type="button" onclick="set_diff('hard')">Difficile</button>
             </div>
             <div id="desc">
                 <p>Trouvez le numéro mystère</p>
                 <p id="range"></p>
                 <p id="max_trials"></p>
-                <p id="trial"></p>
             </div>
             <div id="in_sub">
                 <input type="number" name="Nombre" min="1" max="10" id="user_nb" placeholder="Nombre">

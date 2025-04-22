@@ -19,9 +19,6 @@ let trial_max_nb = 0;
 let trial_nb= 1;
 let var_diff= "";
 
-trial.innerHTML= "1er essai :";
-
-
 function set_diff(diff) {
     let elts_removed = document.querySelectorAll(".tb_removed"); /* --- Resetting Log --- */
     elts_removed.forEach(elt => elt.remove());
@@ -113,8 +110,6 @@ function test() {
     document.getElementById('log').appendChild(hr);
 
     trial_nb += 1;
-
-    trial.innerHTML= trial_nb + "e essai :";
 
     if (inputValue != rndm && trial_nb > trial_max_nb) {
         p_res2.innerHTML= "Perdu !";
