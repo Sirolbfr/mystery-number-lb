@@ -28,16 +28,19 @@ body {
                 background-color: rgb(244, 67, 54);
             }
         }
+
+        & #in_sub {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 5px;
+
+            & input {
+                padding: 4px 5px;
+            }
+        }
     }
-}
 
+    #log {
 
-#in_sub {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5px;
-}
-
-input {
-    padding: 4px 5px;
+    }
 }
