@@ -4,6 +4,9 @@
     --bg: #ddd;
 
     --brd_rad: 12px;
+
+    --min_wdh: 400px;
+    --max_wdh: 500px;
 }
 
 body {
@@ -23,8 +26,8 @@ body {
         flex-direction: column;
         gap: 15px;
         width: 50%;
-        min-width: 300px;
-        max-width: 500px;
+        min-width: var(--min_wdh);
+        max-width: var(--max_wdh);
         
 
         & #levels {
@@ -114,6 +117,11 @@ body {
                     height: 80%;
                     width: 25%;
                     align-self: center;
+
+                    &:disabled {
+                        background-color: var(--accent);
+                        color: var(--bg);
+                    }
                 }
             }
         }
@@ -126,8 +134,8 @@ body {
         background-color: var(--main);
         border-radius: var(--brd_rad);
         width: 50%;
-        min-width: 300px;
-        max-width: 500px;
+        min-width: var(--min_wdh);
+        max-width: var(--max_wdh);
 
         & #desc {
             display: flex;
