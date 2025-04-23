@@ -6,28 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="reset.css">
         <title>Numéro mystère</title>
     </head>
     <body>
-        <h1>Numéro mystère</h1>
-        <div id="main_cont">
+        <div id="first_cont">
             <div id="levels">
-                <button id="easy" type="button" onclick="set_diff('easy')">Facile</button>
-                <button id="medium" type="button" onclick="set_diff('med')">Moyen</button>
-                <button id="hard" type="button" onclick="set_diff('hard')">Difficile</button>
+                <h2>Difficulté :</h2>
+                <div id="lvl_btns">
+                    <button id="easy" type="button" onclick="set_diff(easy)">Facile</button>
+                    <button id="medium" type="button" onclick="set_diff(med)">Moyen</button>
+                    <button id="hard" type="button" onclick="set_diff(hard)">Difficile</button>
+                </div>
             </div>
+            <div id="input_cont">
+                <h2>Entrez un nombre :</h2>
+                <div id="in_sub">
+                    <input type="number" name="Nombre" min="1" max="10" id="user_nb" placeholder="Nombre">
+                    <button type="submit" id="submit" onclick="test()">Tester</button>
+                </div>
+            </div>
+        </div>
+        <div id="main_cont">
+            <h1>Trouvez le nombre mystère</h1>
             <div id="desc">
-                <p>Trouvez le numéro mystère</p>
+                <p id="active_diff"></p>
                 <p id="range"></p>
                 <p id="max_trials"></p>
             </div>
-            <div id="in_sub">
-                <input type="number" name="Nombre" min="1" max="10" id="user_nb" placeholder="Nombre">
-                <button type="submit" id="submit" onclick="test()">Tester</button>
-            </div>
-        </div>
-        <div id="log">
-            <h2>Log</h2>
+            <div id="log"></div>
         </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
