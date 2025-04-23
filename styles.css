@@ -132,7 +132,6 @@ body {
             display: flex;
             justify-content: space-evenly;
             border-radius: var(--brd_rad);
-            margin-bottom: 10px;
         }
 
         & h1 {
@@ -144,10 +143,21 @@ body {
             background-color: var(--bg);
             border-radius: var(--brd_rad);
 
+            & p {
+                color: #333;
+            }
+
             & button {
+                margin: 5px 0;
+                padding: 15px 30px;
                 color: var(--accent);
                 background-color: var(--main);
                 border-radius: var(--brd_rad);
+            }
+
+            & hr {
+                width: 96.5%;
+                justify-self: center;
             }
         }
     }

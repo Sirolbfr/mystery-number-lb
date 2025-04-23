@@ -10,6 +10,7 @@ const input = document.getElementById('user_nb');
 const submit = document.getElementById('submit');
 const log = document.getElementById('log');
 const active_diff = document.getElementById('active_diff');
+const desc = document.getElementById("desc");
 
 let inputValue = 0;
 let max_rndm_nb = 0;
@@ -21,8 +22,6 @@ let var_diff= "";
 function set_diff(diff) {
     let elts_removed = document.querySelectorAll(".tb_removed"); /* --- Resetting Log --- */
     elts_removed.forEach(elt => elt.remove());
-
-    const desc = document.getElementById("desc");
 
     if (diff==easy) {
         trial_max_nb= 3;
@@ -48,6 +47,8 @@ function set_diff(diff) {
         active_diff.innerHTML="Difficile";
         desc.style.backgroundColor="rgb(244, 67, 54)";
     }
+
+    desc.style.marginBottom="0px";
     max_trials.innerHTML= trial_max_nb + " essai(s) max";
     range.innerHTML= 'Entre 1 et ' + max_rndm_nb;
     rndm= set_rndm(max_rndm_nb);
@@ -67,10 +68,12 @@ function set_rndm(max) {
 function test() {
     inputValue = input.value;
 
-    let p_trial = document.createElement('p');
-    p_trial.className= "tb_removed";
-    p_trial.innerHTML = trial_nb + "e essai :";
-    document.getElementById('log').appendChild(p_trial);
+    if (desc.style.marginBottom!="10px") {desc.style.marginBottom="10px";}
+
+    let h_trial = document.createElement('h3');
+    h_trial.className= "tb_removed";
+    h_trial.innerHTML = trial_nb + "e essai :";
+    document.getElementById('log').appendChild(h_trial);
 
     let p_res = document.createElement('p');
     p_res.className= "tb_removed";
