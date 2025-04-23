@@ -11,6 +11,7 @@ body {
     background: url(https://images.pexels.com/photos/6985132/pexels-photo-6985132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     display: flex;
+    flex-direction: column;
     gap: 3%;
     align-items: center;
     justify-content: center;
@@ -160,5 +161,14 @@ body {
                 justify-self: center;
             }
         }
+    }
+}
+
+
+/* ------------- Breakpoint ------------- */
+
+@media screen and (min-width: 1200px) {
+    body {
+        flex-direction: row;
     }
 }

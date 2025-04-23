@@ -1,4 +1,4 @@
-/* -------- Difficulty -------- */
+/* -------- Constants -------- */
 
 const easy = document.getElementById('easy');
 const med = document.getElementById('medium');
@@ -11,6 +11,9 @@ const submit = document.getElementById('submit');
 const log = document.getElementById('log');
 const active_diff = document.getElementById('active_diff');
 const desc = document.getElementById("desc");
+
+
+/* -------- Difficulty -------- */
 
 let inputValue = 0;
 let max_rndm_nb = 0;
@@ -94,15 +97,15 @@ function test() {
 
     if (inputValue > 0 && inputValue <= max_rndm_nb) {
         if (inputValue < rndm) {
-            p_res.innerHTML += "C'est plus !";
+            p_res.innerHTML += "C'est plus !" + " &#10133;";
             plus.play();
         }
         else if (inputValue > rndm) {
-            p_res.innerHTML += "C'est moins !";
+            p_res.innerHTML += "C'est moins !" + " &#10134;";
             moins.play();
         }
         else if (inputValue == rndm) {
-            p_res.innerHTML += "Gagné !";
+            p_res.innerHTML += "Gagné !" + " &#x2714;&#xfe0f;";
             gagné.play();
             submit.disabled= true;
             input.disabled= true;
@@ -114,14 +117,14 @@ function test() {
 
     document.getElementById('log').appendChild(p_res);
 
-    let hr = document.createElement('hr');
+    const hr = document.createElement('hr');
     hr.className= "tb_removed";
     document.getElementById('log').appendChild(hr);
 
     trial_nb += 1;
 
     if (inputValue != rndm && trial_nb > trial_max_nb) {
-        p_res2.innerHTML= "Perdu !";
+        p_res2.innerHTML= "Perdu !" + " &#10060;";
         p_res3.innerHTML= "Nombre Mystère : " + rndm;
         submit.disabled= true;
         input.disabled= true;
@@ -140,13 +143,20 @@ function reset() {
 }
 
 
+/* ---------------- Initialising ---------------- */
+
+window.onload= set_diff(easy);
+
+
+/* --------- Testing on 'Enter' key press --------- */
+
+input.onkeydown = function(key){
+    if(key.keyCode == 13){test();}
+};
+
+
 /* ---------------- EASTER EGG ---------------- */
 
 const plus = new Audio('audio/plus.mp3');
 const moins = new Audio('audio/moins.mp3');
 const gagné = new Audio('audio/gagné.mp3');
-
-
-/* ---------------- Initialising ---------------- */
-
-window.onload= set_diff(easy);
